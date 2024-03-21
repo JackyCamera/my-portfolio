@@ -32,7 +32,7 @@ const Portfolio = () => {
             </a>
           </motion.div>
           {/* img grid*/}
-          <div className="grid grid-cols-3 lg:gap-2">
+          <div className="grid grid-cols-3 lg:gap-2 ">
             {/* img */}
             <div
               className="max-w-[250px] lg:max-w-[320px]
@@ -70,19 +70,10 @@ const Portfolio = () => {
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>
-            {/* <div
+            <div
               className="max-w-[250px] lg:max-w-[320px]
             h-[187px] lg:h-[220px] bg-accent overflow-hidden"
             >
-              <img
-                className="object-cover h-full lg:h-[220px]
-              hover:scale-110 transition-all duration-500"
-                src={Image4}
-                alt=""
-                onContextMenu={(e) => e.preventDefault()}
-              />
-            </div> */}
-            <div>
               <img
                 className="object-fill h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"
@@ -91,7 +82,10 @@ const Portfolio = () => {
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>
-            <div>
+            <div
+              className="max-w-[250px] lg:max-w-[320px]
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            >
               <img
                 className="object-fill h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"
@@ -100,7 +94,10 @@ const Portfolio = () => {
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>
-            <div>
+            <div
+              className="max-w-[250px] lg:max-w-[320px]
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            >
               <img
                 className="object-fill h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"

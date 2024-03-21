@@ -8,8 +8,8 @@ const Header = () => {
     <header className=" fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* Logo */}
-        <Link to="/" className="max-w-[100px]">
-          <img src={Logo} alt="Logo" className="w-[100px] lg:w-[200px]" onContextMenu={(e) => e.preventDefault()} />
+        <Link to="/" className="w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80">
+          <img src={Logo} alt="Logo" className="w-1/2" onContextMenu={(e) => e.preventDefault()} />
         </Link>
         {/* nav */}
         <nav className="hidden lg:flex gap-x-12 font-semibold">

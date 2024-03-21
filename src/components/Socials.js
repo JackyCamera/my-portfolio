@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Socials = () => {
   return (
-    <div className="xl:flex ml-24">
+    <div className="xl:flex ml-4">
       <ul className="flex gap-x-4">
         <li className="inline-block mx-2">
           <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
