@@ -8,7 +8,7 @@ const Home = () => {
     <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={transition1} className="section">
       <div className="container mx-auto h-full relative">
         {/* text & img wrapper */}
-        <div className=" flex flex-col justify-center items-center lg:items-start">
+        <div className=" flex flex-col justify-center">
           {/* text */}
           <motion.div
             initial={{ opacity: 0, y: "-50%" }}
@@ -32,11 +32,8 @@ const Home = () => {
             </Link>
           </motion.div>
           {/* img */}
-          <div
-            className="flex justify-end max-h-96
-          lg:max-h-max"
-          >
-            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }} transition={transition1} className="relative lg:-right-40 ">
+          <div className="flex justify-end max-h-96 lg:max-h-max">
+            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }} transition={transition1} className="relative lg:-right-40 overflow-auto">
               <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} />
             </motion.div>
           </div>
