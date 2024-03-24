@@ -15,7 +15,7 @@ const About = () => {
         >
           {/* img */}
           <div
-            className="flex-1 max-h-48 lg:max-h-max
+            className="flex-1 max-h-48 lg:max-h-[350px]
           order-2 lg:order-none mx-auto h-full relative"
           >
             <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} />
@@ -26,17 +26,15 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-80%" }}
             transition={transition1}
-            className="flex-1 pt-36 pb-14 lg:pt-0
+            className="lg:flex-1 pt-32 
           lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start"
           >
             <h1 className="h1">About me</h1>
-            <br />
+            <p className="mb-3 max-w-sm">I'm a computer engineering undergraduate with a minor in Journalism, based in Hong Kong. I have a passion for technology, writing, photography, and filmmaking.</p>
             <p className="mb-12 max-w-sm">
-              I am a photographer and filmmaker based in Hong Kong. I have been working in multimedia for over 5 years. I love to capture moments and create stories.
-              <br />
-              <br />
-              <br />
+              With a strong foundation in both technical knowledge and communication skills, I aim to bridge the gap between engineering and journalism through multimedia storytelling.
               <div className="w-auto h-auto max-w-xs mx-auto ">
+                <br />
                 <Link to={"/portfolio"} className="btn">
                   View my work
                 </Link>

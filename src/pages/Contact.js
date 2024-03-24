@@ -18,10 +18,10 @@ const Contact = () => {
             exit={{ opacity: 0, y: "100%" }}
             transition={transition1}
             className="hidden lg:flex bg-[#eef7f9]
-          absolute bottom-0 left-0 right-0 top-72 -z-10"
+          absolute bottom-0 left-0 right-0 top-64 -z-10 "
           ></motion.div>
           {/* text & form */}
-          <div className="lg:flex-1 lg:pt-32 px-4">
+          <div className="lg:flex-1 pt-2 lg:w-auto">
             <h1 className="h1">Contact me</h1>
             <p className="mb-12">
               I would love to get suggestions from you.
@@ -57,7 +57,14 @@ const Contact = () => {
             </form>
           </div>
           {/* img */}
-          <motion.div initial={{ opacity: 0, y: "100%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "100%" }} transition={{ transition: transition1, duration: 1.5 }} className="lg:flex-1">
+          <motion.div
+            initial={{ opacity: 0, y: "100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "100%" }}
+            transition={{ transition: transition1, duration: 1.5 }}
+            className="flex-1 max-h-48 lg:max-h-max
+           mx-auto h-full relative"
+          >
             <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} />
           </motion.div>
         </div>

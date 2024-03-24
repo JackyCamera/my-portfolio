@@ -6,6 +6,9 @@ import Image4 from "../img/portfolio/4.jpg";
 import Image5 from "../img/portfolio/v1.jpg";
 import Image6 from "../img/portfolio/v2.jpg";
 import Image7 from "../img/portfolio/v3.jpg";
+import Image8 from "../img/portfolio/5.jpg";
+import Image9 from "../img/portfolio/6.jpg";
+import Image10 from "../img/portfolio/7.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
@@ -32,7 +35,7 @@ const Portfolio = () => {
             </a>
           </motion.div>
           {/* img grid*/}
-          <div className="grid grid-cols-3 lg:gap-2 ">
+          <div className="grid grid-cols-3 lg:gap-2 h-full">
             {/* img */}
             <div
               className="max-w-[250px] lg:max-w-[320px]
@@ -102,6 +105,42 @@ const Portfolio = () => {
                 className="object-fill h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"
                 src={Image7}
+                alt=""
+                onContextMenu={(e) => e.preventDefault()}
+              />
+            </div>
+            <div
+              className="max-w-[250px] lg:max-w-[320px]
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            >
+              <img
+                className="object-fill h-full lg:h-[220px]
+              hover:scale-110 transition-all duration-500"
+                src={Image8}
+                alt=""
+                onContextMenu={(e) => e.preventDefault()}
+              />
+            </div>
+            <div
+              className="max-w-[250px] lg:max-w-[320px]
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            >
+              <img
+                className="object-fill h-full lg:h-[220px]
+              hover:scale-110 transition-all duration-500"
+                src={Image9}
+                alt=""
+                onContextMenu={(e) => e.preventDefault()}
+              />
+            </div>
+            <div
+              className="max-w-[250px] lg:max-w-[320px]
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            >
+              <img
+                className="object-fill h-full lg:h-[220px]
+              hover:scale-110 transition-all duration-500"
+                src={Image10}
                 alt=""
                 onContextMenu={(e) => e.preventDefault()}
               />
