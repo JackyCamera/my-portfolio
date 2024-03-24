@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.b502bb7c.css",
-    "main.js": "/my-portfolio/static/js/main.001b678e.js",
+    "main.js": "/my-portfolio/static/js/main.5eee4965.js",
     "static/media/oreo_logo.png": "/my-portfolio/static/media/oreo_logo.227d20cc0bc82b33de08.png",
     "static/media/man.jpg": "/my-portfolio/static/media/man.0ed07081b69ed119a937.jpg",
     "static/media/v1.jpg": "/my-portfolio/static/media/v1.00394d4995e0de77f34b.jpg",
@@ -13,10 +13,10 @@
     "static/media/1.jpg": "/my-portfolio/static/media/1.55c4f97cbbeab304dc01.jpg",
     "index.html": "/my-portfolio/index.html",
     "main.b502bb7c.css.map": "/my-portfolio/static/css/main.b502bb7c.css.map",
-    "main.001b678e.js.map": "/my-portfolio/static/js/main.001b678e.js.map"
+    "main.5eee4965.js.map": "/my-portfolio/static/js/main.5eee4965.js.map"
   },
   "entrypoints": [
     "static/css/main.b502bb7c.css",
-    "static/js/main.001b678e.js"
+    "static/js/main.5eee4965.js"
   ]
 }
