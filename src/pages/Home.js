@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 const Home = () => {
   return (
-    <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={transition1} className="section">
+    <motion.section initial={{ opacity: 0, y: "100%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "100%" }} transition={transition1} className="section">
       <div className="container mx-auto h-full relative">
         {/* text & img wrapper */}
         <div className=" flex flex-col justify-center">
