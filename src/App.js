@@ -8,7 +8,9 @@ const App = () => {
     <>
       <Router>
         <Header />
+        {/* <div className="pt-[100px] lg:pt-[140px]"> */}
         <AnimRoutes />
+        {/* </div> */}
       </Router>
     </>
   );

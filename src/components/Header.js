@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <header className=" fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
+    <header className="mt-[2vh] w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* Logo */}
         <Link to="/" className="w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80">
@@ -19,6 +19,9 @@ const Header = () => {
           </Link>
           <Link to="/portfolio" className="text-[#696c6d] hover:text-primary transition">
             Portfolio
+          </Link>
+          <Link to="/skills" className="text-[#696c6d] hover:text-primary transition">
+            Skills
           </Link>
           <Link to="/about" className="text-[#696c6d] hover:text-primary transition">
             About

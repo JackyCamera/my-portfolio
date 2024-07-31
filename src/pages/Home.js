@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container mx-auto h-full relative ">
         {/* text & img wrapper */}
         <div
-          className=" flex flex-col lg:flex-row h-full items-center justify-start pt-36
+          className=" flex flex-col lg:flex-row h-full items-center justify-start
         gap-x-8 text-center lg:text-left"
         >
           {/* text */}
@@ -30,14 +30,16 @@ const Home = () => {
             >
               Hong Kong
             </p>
-            <Link to={"/contact"} className="btn mb-[30px]">
+            <Link to={"/contact"} className="btn mb-[30px] rounded-lg">
               Hire me
             </Link>
           </motion.div>
           {/* img */}
           <div className="flex justify-end max-h-96 lg:max-h-max">
             <motion.div initial={{ scale: 0, y: "100%" }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0, y: "100%" }} transition={transition1}>
-              <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} />
+              <div className="rounded-lg overflow-clip">
+                <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} />
+              </div>
             </motion.div>
           </div>
         </div>

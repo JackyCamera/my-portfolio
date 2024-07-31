@@ -15,12 +15,12 @@ import { transition1 } from "../transitions";
 
 const Portfolio = () => {
   return (
-    <motion.section initial={{ opacity: 0, y: "100%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "100%" }} transition={transition1} className="section">
+    <motion.section initial={{ opacity: 0, y: "100%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "100%" }} transition={transition1} className="">
       <div className="container mx-auto h-full relative">
         <div
           className="flex flex-col lg:flex-row h-full
         items-center justify-start gap-x-24 text-center
-        lg:text-left pt-24 lg:pt-36 pb-8"
+        lg:text-left pb-8"
         >
           {/* text */}
           <motion.div initial={{ opacity: 0, y: "-80%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "-80%" }} transition={transition1} className="flex flex-col lg:items-start">
@@ -30,16 +30,16 @@ const Portfolio = () => {
               <br />
               Click the button below to view my whole portfolio in <b>Google Drive</b>. Amazing photos and videos are waiting for you.
             </p>
-            <a href="https://drive.google.com/drive/folders/1tlPZHAjTWp-6rwtHee0GCxnmD77EC71G?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn mb-[30px] mx-auto lg:mx-0">
+            <a href="https://drive.google.com/drive/folders/1tlPZHAjTWp-6rwtHee0GCxnmD77EC71G?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn mb-[30px] mx-auto lg:mx-0 rounded-lg">
               Google Drive
             </a>
           </motion.div>
           {/* img grid*/}
-          <div className="grid grid-cols-3 lg:gap-2 h-full">
+          <div className="grid grid-cols-3 lg:gap-2 w-full">
             {/* img */}
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-cover h-full lg:h-[220px]
@@ -51,7 +51,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-cover h-full lg:h-[220px]
@@ -63,7 +63,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-cover h-full lg:h-[220px]
@@ -75,7 +75,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-fill h-full lg:h-[220px]
@@ -87,7 +87,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-fill h-full lg:h-[220px]
@@ -99,7 +99,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-fill h-full lg:h-[220px]
@@ -111,7 +111,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-fill h-full lg:h-[220px]
@@ -123,7 +123,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-fill h-full lg:h-[220px]
@@ -135,7 +135,7 @@ const Portfolio = () => {
             </div>
             <div
               className="max-w-[250px] lg:max-w-[320px]
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden"
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden rounded-md"
             >
               <img
                 className="object-fill h-full lg:h-[220px]
@@ -145,6 +145,7 @@ const Portfolio = () => {
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>
+            <br />
           </div>
         </div>
       </div>
