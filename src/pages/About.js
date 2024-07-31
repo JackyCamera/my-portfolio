@@ -21,7 +21,7 @@ const About = () => {
           <div className="flex-1 h-full flex justify-center">
             {/* flex-1 max-h-48 lg:max-h-[350px]
           order-2 lg:order-none mx-auto h-full relative */}
-            <div className="items-center rounded-lg overflow-clip h-[70vh]">
+            <div className="items-center rounded-lg overflow-clip h-[70vh] mb-[3vh]">
               <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="h-full w-auto object-contain" />
             </div>
           </div>

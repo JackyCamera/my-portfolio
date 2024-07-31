@@ -29,12 +29,12 @@ const Skills = () => {
   ];
   return (
     <motion.section initial={{ opacity: 0, y: "100%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "100%" }} transition={transition1} className="">
-      <div className="container mx-auto relative ">
+      <div className="container mx-auto h-full relative ">
         {/* text & img wrapper */}
-        <div className="flex flex-col-reverse lg:flex-row mt-[3vh] justify-center gap-x-8 text-center lg:text-left">
+        <div className="flex flex-col-reverse lg:flex-row h-full mt-[3vh] justify-center text-center lg:text-left">
           {/* img */}
-          <div className="flex flex-1 justify-center">
-            <div className="items-center rounded-lg overflow-clip h-[70vh]">
+          <div className="flex-1 h-full flex justify-center">
+            <div className="rounded-lg overflow-clip h-[70vh]">
               <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="h-full w-auto object-contain" />
             </div>
           </div>
@@ -44,17 +44,16 @@ const Skills = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-80%" }}
             transition={transition1}
-            className=" lg:flex-1 
-          lg:w-auto z-10 justify-center items-center lg:items-start "
+            className="lg:flex-1 
+          lg:w-auto z-10 justify-center items-center lg:items-start"
           >
             <h1 className="h1 mb-0">Skills</h1>
-
-            <div className="grid grid-cols-2 lg:grid-cols-2 gap-4 w-full">
+            <div className="grid grid-cols-2 gap-2 w-full mb-[3vh] ">
               {skills.map((skill, index) => (
-                <div key={index} className="flex items-center mb-3 ">
-                  <div className="w-16">{skill.icon}</div>
-                  <div className="flex-1 ">
-                    <div className="flex justify-between mb-1">
+                <div key={index} className="flex items-center mb-3">
+                  <div className="w-[5vw]">{skill.icon}</div>
+                  <div className="">
+                    <div className=" justify-between mb-1">
                       <span className="mr-4">{skill.name}</span>
                       {/* <span>{skill.level}%</span> */}
                     </div>

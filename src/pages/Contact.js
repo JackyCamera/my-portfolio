@@ -67,7 +67,7 @@ const Contact = () => {
                   placeholder="Your message"
                 />
               </div>
-              <button className="btn mt-[5vh] mx-auto rounded-lg">Send it</button>
+              <button className="btn mt-[3vh] mb-[3vh] mx-auto rounded-lg">Send it</button>
             </form>
           </motion.div>
           {/* img */}

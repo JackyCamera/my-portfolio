@@ -35,7 +35,7 @@ const Portfolio = () => {
             </a>
           </motion.div>
           {/* img grid*/}
-          <div className="grid grid-cols-3 lg:gap-2 w-full">
+          <div className="grid grid-cols-3 lg:gap-2 w-full h-full">
             {/* img */}
             <div
               className="max-w-[250px] lg:max-w-[320px]
