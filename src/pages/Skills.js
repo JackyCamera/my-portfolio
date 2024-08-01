@@ -39,25 +39,18 @@ const Skills = () => {
             </div>
           </div>
           {/* text */}
-          <motion.div
-            initial={{ opacity: 0, y: "-80%" }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: "-80%" }}
-            transition={transition1}
-            className="lg:flex-1 
-          lg:w-auto z-10 justify-center items-center lg:items-start"
-          >
+          <motion.div initial={{ opacity: 0, y: "-80%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "-80%" }} transition={transition1} className="lg:flex-1 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start m-1">
             <h1 className="h1 mb-0">Skills</h1>
-            <div className="grid grid-cols-2 gap-2 w-full mb-[2vh] ">
+            <div className="grid grid-cols-2 gap-2 justify-center mt-[3vh] mb-[1vh] ">
               {skills.map((skill, index) => (
-                <div key={index} className="flex items-center mb-3">
+                <div key={index} className="flex mb-0">
                   <div className="w-[5vw]">{skill.icon}</div>
                   <div className="">
-                    <div className=" justify-between mb-1">
-                      <span className="mr-4">{skill.name}</span>
+                    <div className=" justify-between mb-2">
+                      <span className="">{skill.name}</span>
                       {/* <span>{skill.level}%</span> */}
                     </div>
-                    <div className="h-2 bg-gray-200 w-full rounded-full" style={{ width: "15vw" }}>
+                    <div className="h-3 bg-gray-200 w-full rounded-full" style={{ width: "15vw" }}>
                       {" "}
                       <div style={{ width: `${skill.level}%` }} className="h-full bg-green-500 rounded-full"></div>
                     </div>
