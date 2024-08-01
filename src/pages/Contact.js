@@ -72,9 +72,9 @@ const Contact = () => {
           </motion.div>
           {/* img */}
           <motion.div initial={{ opacity: 0, y: "100%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "100%" }} transition={{ transition: transition1, duration: 1.5 }}>
-            <div className="flex-1 h-full flex justify-center">
-              <div className="items-center rounded-lg overflow-clip h-[70vh]">
-                <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="h-full w-auto object-contain" />
+            <div className="flex-1 h-full flex justify-center mb-0">
+              <div className="rounded-lg h-full m-1">
+                <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="rounded-lg h-[70vh]" />
               </div>
             </div>
           </motion.div>

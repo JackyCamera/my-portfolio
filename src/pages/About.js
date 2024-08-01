@@ -18,11 +18,11 @@ const About = () => {
       h-full mt-[3vh] justify-center gap-x-12 text-center lg:text-left"
         >
           {/* img */}
-          <div className="flex-1 h-full flex justify-center">
+          <div className="flex-1 h-full flex justify-center mb-0">
             {/* flex-1 max-h-48 lg:max-h-[350px]
           order-2 lg:order-none mx-auto h-full relative */}
-            <div className="items-center rounded-lg overflow-clip h-[70vh] mb-[3vh]">
-              <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="h-full w-auto object-contain" />
+            <div className="rounded-lg h-full m-1">
+              <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="rounded-lg h-[70vh]" />
             </div>
           </div>
           {/* text */}
@@ -32,7 +32,7 @@ const About = () => {
             exit={{ opacity: 0, y: "-80%" }}
             transition={transition1}
             className="lg:flex-1 
-          lg:w-auto z-10 justify-center items-center lg:items-start"
+          lg:w-auto z-10 justify-center items-center lg:items-start m-1"
           >
             <h1 className="h1">About me</h1>
             <p className="mb-3">I'm a Computer Engineering undergraduate with a minor in Journalism, based in Hong Kong. I have a passion for technology, writing, photography, and filmmaking.</p>

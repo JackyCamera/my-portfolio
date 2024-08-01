@@ -1,5 +1,5 @@
 import React from "react";
-import manImg from "../img/about/man.jpg";
+import manImg from "../img/skills/man.JPG";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
@@ -33,9 +33,9 @@ const Skills = () => {
         {/* text & img wrapper */}
         <div className="flex flex-col-reverse lg:flex-row h-full mt-[3vh] justify-center text-center lg:text-left">
           {/* img */}
-          <div className="flex-1 h-full flex justify-center">
-            <div className="rounded-lg overflow-clip h-[70vh]">
-              <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="h-full w-auto object-contain" />
+          <div className="flex-1 h-full flex justify-center mb-0">
+            <div className="rounded-lg h-full m-1">
+              <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className=" rounded-lg h-[70vh]" />
             </div>
           </div>
           {/* text */}
@@ -48,7 +48,7 @@ const Skills = () => {
           lg:w-auto z-10 justify-center items-center lg:items-start"
           >
             <h1 className="h1 mb-0">Skills</h1>
-            <div className="grid grid-cols-2 gap-2 w-full mb-[3vh] ">
+            <div className="grid grid-cols-2 gap-2 w-full mb-[2vh] ">
               {skills.map((skill, index) => (
                 <div key={index} className="flex items-center mb-3">
                   <div className="w-[5vw]">{skill.icon}</div>
@@ -57,7 +57,7 @@ const Skills = () => {
                       <span className="mr-4">{skill.name}</span>
                       {/* <span>{skill.level}%</span> */}
                     </div>
-                    <div className="h-2 bg-gray-200 w-full rounded-full" style={{ width: "10vw" }}>
+                    <div className="h-2 bg-gray-200 w-full rounded-full" style={{ width: "15vw" }}>
                       {" "}
                       <div style={{ width: `${skill.level}%` }} className="h-full bg-green-500 rounded-full"></div>
                     </div>

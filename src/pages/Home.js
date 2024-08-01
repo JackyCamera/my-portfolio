@@ -35,10 +35,10 @@ const Home = () => {
             </Link>
           </motion.div>
           {/* img */}
-          <div className="flex-1 h-full flex justify-center">
+          <div className="flex-1 h-full flex justify-center mb-0">
             <motion.div initial={{ scale: 0, y: "100%" }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0, y: "100%" }} transition={transition1}>
-              <div className="rounded-lg overflow-clip h-[75vh]">
-                <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="h-full w-auto object-contain" />
+              <div className="rounded-lg h-full m-1">
+                <img src={manImg} alt="" onContextMenu={(e) => e.preventDefault()} className="rounded-lg h-[75vh]" />
               </div>
             </motion.div>
           </div>
