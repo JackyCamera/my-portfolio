@@ -14,7 +14,7 @@ const Contact = () => {
         > */}
         <div
           className="flex flex-col lg:flex-row
-      h-full mt-[3vh] justify-center items-center gap-x-12 text-center lg:text-left"
+      h-full mt-[3vh] justify-center items-center gap-x-0 text-center lg:text-left"
         >
           {/* bg */}
           {/* <motion.div
@@ -36,7 +36,7 @@ const Contact = () => {
           >
             <h1 className="h1">Contact me</h1>
             <p className="mb-5">
-              I would love to get suggestions from you.
+              I would love to get suggestions from you. Send me an email and I will get back to you as soon as possible.
               <br />
               Email: jackyxiechenzhijie@gmail.com
             </p>

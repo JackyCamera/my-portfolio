@@ -15,7 +15,7 @@ const About = () => {
         > */}
         <div
           className="flex flex-col-reverse lg:flex-row
-      h-full mt-[3vh] justify-center items-center gap-x-12 text-center lg:text-left"
+      h-full mt-[0vh] justify-center items-center gap-x-12 text-center lg:text-left"
         >
           {/* img */}
           <div className="flex-1 h-full flex justify-center mb-0">
