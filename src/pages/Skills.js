@@ -39,8 +39,8 @@ const Skills = () => {
             </div>
           </div>
           {/* text */}
-          <motion.div initial={{ opacity: 0, y: "-80%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "-80%" }} transition={transition1} className="lg:flex-1 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start">
-            <h1 className="h1 mb-0">Skills</h1>
+          <motion.div initial={{ opacity: 0, y: "-80%" }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "-80%" }} transition={transition1} className="lg:flex-1 lg:w-auto z-10 flex flex-col justify-center items-center  ">
+            <h1 className="h1">Skills</h1>
             <div className="grid grid-cols-2 gap-2 justify-center mt-[3vh] mb-[1vh] ">
               {skills.map((skill, index) => (
                 <div key={index} className="flex mb-0">
