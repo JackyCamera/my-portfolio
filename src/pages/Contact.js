@@ -36,7 +36,7 @@ const Contact = () => {
           >
             <h1 className="h1">Contact me</h1>
             <p className="mb-5">
-              I would love to get suggestions from you. Send me an email and I will get back to you as soon as possible.
+              I would love to get suggestions from you.
               <br />
               Email: jackyxiechenzhijie@gmail.com
             </p>
