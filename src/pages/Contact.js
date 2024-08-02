@@ -14,7 +14,7 @@ const Contact = () => {
         > */}
         <div
           className="flex flex-col lg:flex-row
-      h-full mt-[3vh] justify-center gap-x-12 text-center lg:text-left"
+      h-full mt-[3vh] justify-center items-center gap-x-12 text-center lg:text-left"
         >
           {/* bg */}
           {/* <motion.div

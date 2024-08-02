@@ -14,8 +14,8 @@ const About = () => {
       h-full items-center justify-center gap-x-24 text-center lg:text-left"
         > */}
         <div
-          className="flex flex-col lg:flex-row
-      h-full mt-[3vh] justify-center gap-x-12 text-center lg:text-left"
+          className="flex flex-col-reverse lg:flex-row
+      h-full mt-[3vh] justify-center items-center gap-x-12 text-center lg:text-left"
         >
           {/* img */}
           <div className="flex-1 h-full flex justify-center mb-0">

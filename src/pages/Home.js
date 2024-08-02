@@ -9,8 +9,8 @@ const Home = () => {
       <div className="container mx-auto h-full relative ">
         {/* text & img wrapper */}
         <div
-          className=" flex flex-col lg:flex-row h-full items-center justify-start
-        gap-x- text-center lg:text-left"
+          className="flex flex-col-reverse lg:flex-row
+      h-full justify-center items-center gap-x-8 text-center lg:text-left"
         >
           {/* text */}
           <motion.div
@@ -18,8 +18,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-50%" }}
             transition={transition1}
-            className="lg:flex-1 px-4
-            lg:w-auto z-10 flex flex-col justify-center lg:items-start"
+            className="lg:flex-1 
+          lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start m-1"
           >
             <h1 className="h1 mt-[10vh]">
               photographer <br /> & student
@@ -30,7 +30,7 @@ const Home = () => {
             >
               Hong Kong
             </p>
-            <Link to={"/contact"} className="btn mb-[8vh] rounded-lg">
+            <Link to={"/contact"} className="btn w-[20vw] mb-[3vh] rounded-lg">
               Hire me
             </Link>
           </motion.div>
